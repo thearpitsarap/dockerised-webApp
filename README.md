@@ -17,7 +17,7 @@ To run this web app locally, follow these steps:
 2. Build the Docker image:
 
     ```bash
-    docker build -t your-image-name .
+    docker build -t spyder-todo .
     ```
 
     Replace `your-image-name` with a name you choose for your Docker image.
@@ -25,7 +25,7 @@ To run this web app locally, follow these steps:
 3. Run the Docker container:
 
     ```bash
-    docker run -p 3000:3000 -d your-image-name
+    docker run -p 3000:3000 -d spyder-todo
     ```
 
     This maps port 3000 on your local machine to port 3000 in the Docker container. Adjust the ports if your app uses a different port.
@@ -39,4 +39,4 @@ To run this web app locally, follow these steps:
 To stop the Docker container, you can use the following command:
 
 ```bash
-docker stop $(docker ps -q --filter ancestor=your-image-name)
+docker stop $(docker ps -q --filter ancestor=spyder-todo)
